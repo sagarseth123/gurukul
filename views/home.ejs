@@ -1,0 +1,135 @@
+<%- include("partial/header") -%>
+
+
+
+    <div class="container head">
+
+        <div class="row">
+            <div class="col" style="text-align: right;">
+                <i class="fab fa-studiovinari " style="font-size: 10vw;"></i>
+            </div>
+            <div class="col" style="text-align: center; font-size:10vw;">
+                <p>Gurukul</p>
+            </div>
+            <div class="col">
+                <i class="fab fa-studiovinari fa-flip-horizontal" style="font-size: 10vw;"></i>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+
+    <div class="container class">
+        <h1 style="text-align: center; margin-bottom: 6vw;">CBSE</h1>
+        <div class="row">
+            <% for(var i=0;i<7;i++){ %>
+                <div class="col-md-3 col-sm-6 cl">
+
+                    <a href="class<%- 6+i %>">  <button type="submit" name="class<%- 6+i %>" class="btn btn-secondary btn-xl">class <%- 6+i %> </button></a>
+
+                </div>
+                <% } %>
+
+        </div>
+
+    </div>
+    <hr>
+    <div class="container class">
+        <h1 style="text-align: center;  margin-bottom: 6vw;margin-top: 6vw;">ENTRANCE EXAM</h1>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 cl">
+                <button type="button" class="btn btn-secondary btn-xl">JEE MAIN</button>
+            </div>
+            <div class="col-md-3 col-sm-6 cl">
+                <button type="button" class="btn btn-secondary btn-xl">NDA</button>
+            </div>
+            <div class="col-md-3 col-sm-6 cl">
+                <button type="button" class="btn btn-secondary btn-xl">airforce X & Y</button>
+            </div>
+            <div class="col-md-3 col-sm-6 cl">
+                <button type="button" class="btn btn-secondary btn-xl">NAVY AA & SSR</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr>
+
+
+
+    <div class="container class">
+        <h1 style="text-align: center;  margin-bottom: 6vw;margin-top: 6vw;">CBSE SAMPLE QUESTION PAPER</h1>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 cl">
+                <button type="button" class="btn btn-secondary btn-xl">class VI</button>
+            </div>
+            <div class="col-md-3 col-sm-6 cl">
+                <button type="button" class="btn btn-secondary btn-xl">class VII</button>
+            </div>
+            <div class="col-md-3 col-sm-6 cl">
+                <button type="button" class="btn btn-secondary btn-xl">class VIII</button>
+            </div>
+            <div class="col-md-3 col-sm-6 cl">
+                <button type="button" class="btn btn-secondary btn-xl">class IX</button>
+            </div>
+            <div class="col-md-3 col-sm-6 cl">
+                <button type="button" class="btn btn-secondary btn-xl">class X</button>
+            </div>
+            <div class="col-md-3 col-sm-6 cl">
+                <button type="button" class="btn btn-secondary btn-xl"> class XI</button>
+            </div>
+            <div class="col-md-3 col-sm-6 cl">
+                <button type="button" class="btn btn-secondary btn-xl">class XII</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr>
+
+
+
+    <div class="container class">
+        <h1 style="text-align: center;  margin-bottom: 6vw;margin-top: 6vw;">BOOKS PDF</h1>
+        <p>for downloading the pdf of books and refreshers for CBSE and other entrance exams like JEE MAIN and NDA <a href="">click here</a></p>
+    </div>
+
+
+
+
+    <hr>
+
+
+
+
+
+    <div class="container class">
+        <h1> EXAMPLE </h1>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <div class="row">
+            <% for(var i=0;i<7;i++){ %>
+                <div class="col-md-3 col-sm-6 cl">
+
+                    <a href="class<%- 6+i %>">  <button type="submit" name="class<%- 6+i %>" class="btn btn-secondary btn-xl">class <%- 6+i %> </button></a>
+
+                </div>
+                <% } %>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <%- include("partial/fotter") -%>

@@ -1,0 +1,27 @@
+.navbar-brand {
+    font-size: larger;
+}
+
+.navbar {
+    position: absolute;
+}
+
+.head {
+    margin-top: 50px;
+    margin-bottom: 2vw;
+}
+
+.btn-xl {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 2vw;
+    width: 60%; //Specify your width here
+    height: 30%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.class {
+    text-align: center;
+}

@@ -1,0 +1,206 @@
+<%- include("partial/header") -%>
+
+
+    <div class="container class">
+        <h1 style="text-align: center;  margin-bottom: 6vw;margin-top: 6vw;">choose subject</h1>
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 cl">
+                <button class=" btn btn-secondary btn-xl" type="button" data-toggle="collapse" data-target="#english">
+                    <span class="navbar-toggler-icon"></span>
+                ENGLISH</button>
+
+                <div class="collapse navbar-collapse" id="english">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+
+
+
+                            <button class=" btn btn-xl" type="button" data-toggle="collapse" data-target="#ebook1" style="border-width: 0.2vw; border-color: #6c757d;">
+                                <span class="navbar-toggler-icon"></span>
+                            book 1</button>
+
+                            <div class="collapse navbar-collapse" id="ebook1">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">chapter 1</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">chapter 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+                        </li>
+
+
+
+
+                        <li class="nav-item active">
+
+
+
+                            <button class=" btn btn-xl" type="button" data-toggle="collapse" data-target="#ebook2" style="border-width: 0.2vw; border-color: #6c757d;">
+                                    <span class="navbar-toggler-icon"></span>
+                                book 2</button>
+
+                            <div class="collapse navbar-collapse" id="ebook2">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">chapter 1</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">chapter 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6 cl">
+                <button class=" btn btn-secondary btn-xl" type="button" data-toggle="collapse" data-target="#hindi">
+                    <span class="navbar-toggler-icon"></span>
+                HINDI</button>
+
+
+                <div class="collapse navbar-collapse" id="hindi">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+
+
+
+                            <button class=" btn btn-xl" type="button" data-toggle="collapse" data-target="#hbook1" style="border-width: 0.2vw; border-color: #6c757d;">
+                                <span class="navbar-toggler-icon"></span>
+                            vasant</button>
+
+                            <div class="collapse navbar-collapse" id="hbook1">
+                                <ul class="navbar-nav ml-auto">
+
+
+
+
+                                    <% files.map(file => { %>
+                                        <li>
+                                            <a href="<%= file.url %>">
+                                                <%= file.name %>
+                                            </a>
+                                        </li>
+                                        <% }) %>
+
+
+
+
+
+                                </ul>
+                            </div>
+
+
+
+                        </li>
+
+
+
+
+                        <li class="nav-item active">
+
+
+
+                            <button class=" btn btn-xl" type="button" data-toggle="collapse" data-target="#ebook2" style="border-width: 0.2vw; border-color: #6c757d;">
+                                    <span class="navbar-toggler-icon"></span>
+                                book 2</button>
+
+                            <div class="collapse navbar-collapse" id="ebook2">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">chapter 1</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">chapter 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6 cl">
+                <button class=" btn btn-secondary btn-xl" type="button" data-toggle="collapse" data-target="#math">
+                    <span class="navbar-toggler-icon"></span>
+                MATH</button>
+
+                <div class="collapse navbar-collapse" id="math">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">book 1</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">book 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-3 col-sm-6 cl">
+                <button class=" btn btn-secondary btn-xl" type="button" data-toggle="collapse" data-target="#science">
+                    <span class="navbar-toggler-icon"></span>
+                SCIENCE</button>
+
+                <div class="collapse navbar-collapse" id="science">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">book 1</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">book 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-3 col-sm-6 cl">
+                <button class=" btn btn-secondary btn-xl" type="button" data-toggle="collapse" data-target="#sst">
+                    <span class="navbar-toggler-icon"></span>
+                Social Studies</button>
+
+                <div class="collapse navbar-collapse" id="sst">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">book 1</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">book 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container" id="math6">
+
+    </div>
