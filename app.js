@@ -11,13 +11,26 @@ const fs = require("fs");
 
 const app = express();
 
-const dirPath = path.join(__dirname, "public/pdf");
-const files = fs.readdirSync(dirPath).map(name => {
+const dirPath6 = path.join(__dirname, "public/pdf");
+const files = fs.readdirSync(dirPath6).map(name => {
     return {
         name: path.basename(name, ".pdf"),
         url: `/pdf/${name}`
     };
 });
+
+
+
+
+const dirPath8 = path.join(__dirname, "public/pdf/class6/hindi6");
+const files8 = fs.readdirSync(dirPath8).map(name => {
+    return {
+        name: path.basename(name, ".hindi6"),
+        url: `/hindi6/${name}`
+    };
+    res.render(name, {});
+});
+app.use(express.static("public/pdf/class6"));
 
 
 
@@ -43,9 +56,15 @@ app.get("/class6", function(req, res) {
 app.get("/class7", function(req, res) {
     res.render("class7", {});
 });
+app.get("/class8", (req, res) => {
+    res.render("class8", { files8 });
+});
+
 app.get("/class8", function(req, res) {
     res.render("class8", {});
 });
+
+
 app.get("/class9", function(req, res) {
     res.render("class9", {});
 });
